@@ -21,6 +21,9 @@ td {
 		</style>
 
                 <title>Informal Formalization Seminar</title>
+                <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+                </script>
         </head>
 <body>
 
@@ -40,8 +43,40 @@ It is organized by <a href="http://www.few.vu.nl/~sdn249/">Sander Dahmen</a> (VU
 Location: <a href="https://assets-us-01.kc-usercontent.com/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/93bed55c-f7ce-4b2d-a04b-cfb760ca02c0/Campus%20plattegrond%202024%20ENG.pdf">New University Building (NU), room 09A46</a>
 
 <dl>
-	Time: 12:45-16:45<br>
-        Speakers: <a href="https://people.rennes.inria.fr/Assia.Mahboubi/"><b>Assia Mahboubi</b></a> (Inria/VU Amsterdam), <a href="https://mariainesdff.github.io/"><b>María Inés de Frutos-Fernández</b></a> (University of Bonn), and <b>Andrew Yang</b> (Imperial College London)
+	<dt>12:45-13:45</dt>
+	<dd>
+		<p> <a href="https://people.rennes.inria.fr/Assia.Mahboubi/"><b>Assia Mahboubi</b></a> (Inria/VU Amsterdam), <em>Machine-checked diagram chasing</em>
+		<p> Abstract:
+
+		Diagrams play a central role in category theory, for they provide
+such an efficient way of delivering convincing enough proofs. For instance, chasing commutative sub-diagrams in a larger diagram provides an elegant alternative to overly technical equational reasoning. Diagram chasing actually refers to a central technique in homological algebra. In this context, diagram chases over Abelian categories are used for proving the existence, injectivity, surjectivity of certain morphisms, the exactness of some sequences, etc. However, complex diagram chases only remain readable at the price of hiding non-trivial technical arguments and are, in practice, challenging to rigorously verify by hand. In this talk, we will present a work in progress towards building a computer-aided tool for writing and for verifying proofs by diagram chasing. It is based on the deep-embedding of a simple first-order language into the dependent type theory rooting proof assistants like Coq/Rocq or Lean.
+
+This is a joint work with Ambroise Lafont (École polytechnique, France) and Matthieu Piquerez (Goethe-Universität, Frankfort, Germany).
+	</dd>
+	<dt>13:45-14:00</dt>
+	<dd>
+		<p>Short break
+	</dd>
+	<dt>14:00-15:00</dt>
+	<dd>
+		<p> <a href="https://mariainesdff.github.io/"><b>María Inés de Frutos-Fernández</b></a> (University of Bonn), <em>Formalizing the divided power envelope in Lean</em>
+		<p> Abstract:
+
+		Given an ideal I in a commutative ring A, a divided power structure on I is a collection of maps \(\gamma_n : I \to I\) indexed by \(\mathbb{N}\) which behave like the family \(x^n/n!\), but which can be defined even if the characteristic of A is positive. From a divided power structure on I and an ideal J in an A-algebra B, one can construct the “divided power envelope” \(D_B(J)\), consisting of a B-algebra D with a given ideal \(J_D\) and a divided power structure satisfying a universal property and a compatibility condition. The divided power envelope is needed for the highly technical definition of the Fontaine period ring B_cris, which is used to identify crystalline Galois representations and in the comparison theorem between étale and crystalline cohomology.
+
+In this talk I will describe ongoing joint work with Antoine Chambert-Loir towards formalizing the divided power envelope in the Lean 4 theorem prover. This project has already resulted in numerous contributions to the Mathlib library, including in particular the theory of weighted polynomial rings, and substitution of power series.
+	</dd>
+	<dt>15:00-15:45</dt>
+	<dd>
+	<p>Coffee break
+	</dd>
+	<dt>15:45-16:45</dt>
+	<dd>
+		<p> <b>Andrew Yang</b> (Imperial College London), <em>Towards R = T in Lean 4: Patching</em>
+		<p> Abstract:
+
+		Patching (or "Taylor-Wiles systems") is one of the many ingenious ideas introduced in Wiles' and Taylor-Wiles' groundbreaking papers on the modularity of elliptic curves. This technique was later refined by Diamond, Fujiwara, and Kisin to simplify proofs and relax conditions on inputs. In this talk, we will outline how patching is formalized in Lean 4, building on Scholze's reformulation using ultraproducts. We will also discuss its role in the ongoing effort to formalize Fermat's Last Theorem.
+	</dd>
 </dl>
 
 <h2 id="future"># Future seminars</h2>
