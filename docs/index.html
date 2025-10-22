@@ -74,9 +74,11 @@ the math department of the University of Amsterdam.
 	</dd>
 	<dt>16:00-17:00</dt>
 	<dd>
-	<p><b>Xavier G&eacute;n&eacute;reux</b> (LMU Munich), <em>TBA</em>
-	<p> Abstract:
-	TBA
+	<p><b>Xavier G&eacute;n&eacute;reux</b> (LMU Munich), <em>Incremental Forward Reasoning for Aesop</em>
+	<p> Abstract: Aesop, a white-box proof search tactic for Lean, has long supported forward rules, which derive additional facts from the hypotheses in a goal. However, the initial implementation of this feature did not scale to local contexts containing many hypotheses. A core limitation of the initial implementation was that it was stateless and so had to redo large amounts of work on each goal that Aesop produced, even though the local contexts of these goals tend to be very similar.
+
+		I will be presenting a new, stateful implementation that takes advantage of such similarities to achieve much better performance on various examples. The new implementation is almost fully backwards compatible and is already available in Aesop. I will also be discussing examples that showcase this new implementation, as well as how Aesop’s features can be used in practice more broadly. This is joint work with Jannis Limperg (Amazon, Germany).
+
 	</dd>
 </dl>
 
